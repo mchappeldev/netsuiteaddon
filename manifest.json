@@ -3,7 +3,7 @@
    "name": "CADD Microsystems Netsuite Extension",
    "description": "Extends Netsuite functionality using JQuery",
    "permissions": [ "activeTab", "https://ajax.googleapis.com/" ],
-   "version": "0.4",
+   "version": "0.3",
 
    "background": {
       "scripts": [ "jquery-3.2.1.min.js" ]
@@ -11,7 +11,7 @@
 
   "applications": {
   "gecko": {
-    "id": "netsuiteaddon@example.com",
+    "id": "netsuiteaddon@cadd.com",
     "update_url": "https://raw.githubusercontent.com/subaru25rs/netsuiteaddon/master/Updates/updates.json"
   }
 },
@@ -22,7 +22,9 @@
       "default_popup": "popup.html"
    },
 
-   "icons": {"128": "128.png"
+   "icons": {"48": "128.png",
+             "96": "128.png",
+             "128": "128.png"
    },
 
    "content_scripts": [ {

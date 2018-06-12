@@ -1,11 +1,11 @@
 {
   "addons": {
-    "netsuiteaddon@example.com": {
+    "netsuiteaddon@cadd.com": {
       "updates": [
         { "version": "0.3",
-          "update_link": "https://github.com/subaru25rs/netsuiteaddon/raw/master/Updates/cadd_microsystems_netsuite_extension-0.3-an%2Bfx-windows.xpi" },
+          "update_link": "https://github.com/subaru25rs/netsuiteaddon/raw/master/Updates/netsuite_extension-0.3-an%2Bfx-windows.xpi" },
         { "version": "0.4",
-          "update_link": "https://github.com/subaru25rs/netsuiteaddon/raw/master/Updates/cadd_microsystems_netsuite_extension-0.4-an%2Bfx-windows.xpi" }
+          "update_link": "https://github.com/subaru25rs/netsuiteaddon/raw/master/Updates/netsuite_extension-0.4-an%2Bfx-windows.xpi" }
       ]
     }
   }
