@@ -1,6 +1,6 @@
 {
   "addons": {
-    "netsuiteaddon": {
+    "netsuiteaddon@example.com": {
       "updates": [
         { "version": "0.3",
           "update_link": "https://github.com/subaru25rs/netsuiteaddon/blob/master/Updates/cadd_microsystems_netsuite_extension-0.3-an+fx-windows.xpi" },
