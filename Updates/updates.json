@@ -3,7 +3,7 @@
     "netsuiteaddon": {
       "updates": [
         { "version": "0.3",
-          "update_link": "https://github.com/subaru25rs/netsuiteaddon/blob/master/Updates/firefox-0.3.xpi" },
+          "update_link": "https://github.com/subaru25rs/netsuiteaddon/blob/master/Updates/cadd_microsystems_netsuite_extension-0.3-an+fx-windows" },
         { "version": "0.4",
           "update_link": "https://github.com/subaru25rs/netsuiteaddon/blob/master/Updates/firefox-0.4.xpi" },
       ]
