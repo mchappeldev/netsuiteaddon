@@ -1,7 +1,12 @@
 0.1 - Initial Test Build
 0.2 - Added popup.html, icons, and rewrote manifest with updated info.
 	0.2.1 - Corrected mistakes in formatting and icons.
-0.3 - Refined code to allow for compatibility with Firefox (Changed to a For loop instead of relying on jQuery to iterate automatically),
+0.3 - Refined code to allow for compatibility with Firefox
+			(Changed to a For loop instead of relying on jQuery to iterate automatically),
 			Added more info to popup.html,
 			Created update strategy for Firefox with project hosted on GitHub
 			Changed Icons for Firefox
+0.4 - PLANNED - Calendar Highlighting, Automatic Check Boxes for Case Merge Screen
+0.5 - PLANNED - Settings Page for Calendar Highlighting and Refreshes
+
+Branch
