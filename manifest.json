@@ -1,47 +1,36 @@
 {
-    "manifest_version": 2,
-    "name": "CADD Microsystems Netsuite Extension",
-    "description": "Extends Netsuite functionality using JQuery",
-    "permissions": ["activeTab", "https://ajax.googleapis.com/"],
-    "version": "0.3",
+   "manifest_version": 2,
+   "name": "CADD Microsystems Netsuite Extension",
+   "description": "Extends Netsuite functionality using JQuery",
+   "permissions": [ "activeTab", "https://ajax.googleapis.com/" ],
+   "version": "0.3",
 
-    "background": {
-        "scripts": ["jquery-3.2.1.min.js"]
-    },
+   "background": {
+      "scripts": [ "jquery-3.2.1.min.js" ]
+   },
 
-    "applications": {
-        "gecko": {
-            "id": "netsuiteaddon@cadd.com",
-            "update_url": "https://raw.githubusercontent.com/subaru25rs/netsuiteaddon/master/Updates/updates.json"
-        }
-    },
+  "applications": {
+  "gecko": {
+    "id": "netsuiteaddon@cadd.com",
+    "update_url": "https://raw.githubusercontent.com/subaru25rs/netsuiteaddon/master/Updates/updates.json"
+  }
+},
 
 
-    "browser_action": {
-        "default_icon": "cadd.png",
-        "default_popup": "popup.html"
-    },
+  "browser_action": {
+      "default_icon": "cadd.png",
+      "default_popup": "popup.html"
+   },
 
-    "icons": {
-        "48": "128.png",
-        "96": "128.png",
-        "128": "128.png"
-    },
+   "icons": {"48": "128.png",
+             "96": "128.png",
+             "128": "128.png"
+   },
 
-    "content_scripts": [{
-            "js": ["jquery-3.2.1.min.js", "dashboard.js"],
-            "matches": ["https://system.na3.netsuite.com/app/center/card*"],
-            "run_at": "document_start"
-        },
-        {
-                "js": ["jquery-3.2.1.min.js", "supportcase.js"],
-                "matches": ["https://system.na3.netsuite.com/app/crm/support/supportcase*"],
-                "run_at": "document_start"
-        },
-        {
-            "js": ["jquery-3.2.1.min.js", "merge.js"],
-            "matches": ["https://system.na3.netsuite.com/app/crm/support/supportcasemerge*"],
-            "run_at": "document_start"
-        }
-    ]
+   "content_scripts": [ {
+      "js": [ "jquery-3.2.1.min.js", "content.js" ],
+      "matches": [ "https://system.netsuite.com/*", "https://system.na3.netsuite.com/*", "https://system.sandbox.netsuite.com/", "https://system.na1.netsuite.com/*", "https://system.eu1.netsuite.com/*" ],
+      "run_at": "document_start"
+   } ]
+
 }
