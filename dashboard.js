@@ -7,7 +7,6 @@ window.addEventListener("load", function() {
     refresh();
 }, false);
 
-//refresh function
 function refresh() {
     //create an array of all refresh buttons
     var buttons = jQuery(".ns-portlet-icon-refresh").toArray();
