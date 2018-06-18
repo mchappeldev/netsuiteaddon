@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "CADD Microsystems Netsuite Extension",
     "description": "Extends Netsuite functionality using JQuery",
-    "permissions": ["activeTab", "https://ajax.googleapis.com/"],
+    "permissions": ["activeTab", "storage", "https://ajax.googleapis.com/"],
     "version": "0.3",
 
     "background": {
@@ -28,10 +28,19 @@
         "128": "128.png"
     },
 
+    "options_ui": {
+  "page": "options.html"
+},
+
     "content_scripts": [{
-            "js": ["jquery-3.2.1.min.js", "dashboard.js"],
+            "js": ["jquery-3.2.1.min.js", "dashboard-refresh.js"],
             "matches": ["https://system.na3.netsuite.com/app/center/card*"],
             "run_at": "document_start"
+        },
+        {
+          "js": ["dashboard-highlight.js"],
+          "matches": ["https://system.na3.netsuite.com/app/center/card*"]
+
         },
         {
                 "js": ["jquery-3.2.1.min.js", "supportcase.js"],
