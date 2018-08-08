@@ -5,3 +5,6 @@
 			Added more info to popup.html,
 			Created update strategy for Firefox with project hosted on GitHub
 			Changed Icons for Firefox
+
+Wishlist: 
+Popup Alert for case refresh.
