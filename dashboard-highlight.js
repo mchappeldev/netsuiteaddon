@@ -1,13 +1,33 @@
-//var color1 = "blue";
-//var blueVar = chrome.storage.sync.get({favoriteColor: 'red', likesColor: true});
-chrome.storage.sync.get("favoriteColor1", function (obj) {
-    color1 = obj.favoriteColor1;
+//Fetch highlight color settings and store to variables
+chrome.storage.sync.get("consultColor", function (obj) {
+    consultColor = obj.consultColor;
 });
-chrome.storage.sync.get("favoriteColor2", function (obj) {
-    color2 = obj.favoriteColor2;
+chrome.storage.sync.get("internalColor", function (obj) {
+    internalColor = obj.internalColor;
 });
-chrome.storage.sync.get("favoriteColor3", function (obj) {
-    color3 = obj.favoriteColor3;
+chrome.storage.sync.get("leaveColor", function (obj) {
+    leaveColor = obj.leaveColor;
+});
+chrome.storage.sync.get("marketingColor", function (obj) {
+    marketingColor = obj.marketingColor;
+});
+chrome.storage.sync.get("salesColor", function (obj) {
+    salesColor = obj.salesColor;
+});
+chrome.storage.sync.get("noteColor", function (obj) {
+    noteColor = obj.noteColor;
+});
+chrome.storage.sync.get("supportColor", function (obj) {
+    supportColor = obj.supportColor;
+});
+chrome.storage.sync.get("trainingColor", function (obj) {
+    trainingColor = obj.trainingColor;
+});
+chrome.storage.sync.get("reminderColor", function (obj) {
+    reminderColor = obj.reminderColor;
+});
+chrome.storage.sync.get("holidayColor", function (obj) {
+    holidayColor = obj.holidayColor;
 });
 
 
@@ -22,17 +42,17 @@ function highlight() {
         //loop through array and assign colors based on the link text
         var i;
         for (i = 0; i < links.length; i++) {
-            if (links[i].text.includes("SUPPORT")) {
+            if (links[i].text.includes("CONSULT")) {
                 jQuery(".ns-today").eq(i).css({
                     //"text-align": "justify",
                     //"text-justify": "inter-word",
-                    "background-color": color1
+                    "background-color": consultColor
 //                    "color": "white"
                 });
                 jQuery(".ns-event-view").eq(i).css({
                     //"text-align": "justify",
                     //"text-justify": "inter-word",
-                    "background-color": color1
+                    "background-color": consultColor
                     //"color": "white"
                 });
                 jQuery(".ns-event-link").eq(i).css({
@@ -45,32 +65,42 @@ function highlight() {
               jQuery(".ns-today").eq(i).css({
                   //"text-align": "justify",
                   //"text-justify": "inter-word",
-                  "background-color": color2
+                  "background-color": internalColor
+                  //"filter": "opacity(1.0)",
 //                    "color": "white"
               });
               jQuery(".ns-event-view").eq(i).css({
                   //"text-align": "justify",
                   //"text-justify": "inter-word",
-                  "background-color": color2
+                  "background-color": internalColor
+                  //"filter": "opacity(1.0)",
                   //"color": "white"
+              });
+              jQuery(".ns-event-content").eq(i).css({
+                  //"text-align": "justify",
+                  //"text-justify": "inter-word",
+                  //"background-color": internalColor,
+                  //"filter": "brightness(200%)",
+
               });
               jQuery(".ns-event-link").eq(i).css({
                   //"text-align": "justify",
                   //"text-justify": "inter-word",
-                  //"background-color": "Blue",
+                  //"background-color": internalColor,
+                  //"filter": "opacity(1.0)",
                   "color": "Black"
               });
             }   else if (links[i].text.includes("LEAVE")) {
               jQuery(".ns-today").eq(i).css({
                   //"text-align": "justify",
                   //"text-justify": "inter-word",
-                  "background-color": color3
+                  "background-color": leaveColor
 //                    "color": "white"
               });
               jQuery(".ns-event-view").eq(i).css({
                   //"text-align": "justify",
                   //"text-justify": "inter-word",
-                  "background-color": color3
+                  "background-color": leaveColor
                   //"color": "white"
               });
               jQuery(".ns-event-link").eq(i).css({
@@ -79,7 +109,148 @@ function highlight() {
                   //"background-color": "Blue",
                   "color": "Black"
               });
-            } else if (links[i].text.includes("NOT")) {
+            }
+            else if (links[i].text.includes("MARKETING")) {
+              jQuery(".ns-today").eq(i).css({
+                  //"text-align": "justify",
+                  //"text-justify": "inter-word",
+                  "background-color": marketingColor
+            //                    "color": "white"
+              });
+              jQuery(".ns-event-view").eq(i).css({
+                  //"text-align": "justify",
+                  //"text-justify": "inter-word",
+                  "background-color": marketingColor
+                  //"color": "white"
+              });
+              jQuery(".ns-event-link").eq(i).css({
+                  //"text-align": "justify",
+                  //"text-justify": "inter-word",
+                  //"background-color": "Blue",
+                  "color": "Black"
+              });
+            }
+            else if (links[i].text.includes("SALES")) {
+              jQuery(".ns-today").eq(i).css({
+                  //"text-align": "justify",
+                  //"text-justify": "inter-word",
+                  "background-color": salesColor
+            //                    "color": "white"
+              });
+              jQuery(".ns-event-view").eq(i).css({
+                  //"text-align": "justify",
+                  //"text-justify": "inter-word",
+                  "background-color": salesColor
+                  //"color": "white"
+              });
+              jQuery(".ns-event-link").eq(i).css({
+                  //"text-align": "justify",
+                  //"text-justify": "inter-word",
+                  //"background-color": "Blue",
+                  "color": "Black"
+              });
+            }
+            else if (links[i].text.includes("NOTE")) {
+              jQuery(".ns-today").eq(i).css({
+                  //"text-align": "justify",
+                  //"text-justify": "inter-word",
+                  "background-color": noteColor
+//                    "color": "white"
+              });
+              jQuery(".ns-event-view").eq(i).css({
+                  //"text-align": "justify",
+                  //"text-justify": "inter-word",
+                  "background-color": noteColor
+                  //"color": "white"
+              });
+              jQuery(".ns-event-link").eq(i).css({
+                  //"text-align": "justify",
+                  //"text-justify": "inter-word",
+                  //"background-color": "Blue",
+                  "color": "Black"
+              });
+            }
+            else if (links[i].text.includes("SUPPORT")) {
+              jQuery(".ns-today").eq(i).css({
+                  //"text-align": "justify",
+                  //"text-justify": "inter-word",
+                  "background-color": supportColor
+//                    "color": "white"
+              });
+              jQuery(".ns-event-view").eq(i).css({
+                  //"text-align": "justify",
+                  //"text-justify": "inter-word",
+                  "background-color": supportColor
+                  //"color": "white"
+              });
+              jQuery(".ns-event-link").eq(i).css({
+                  //"text-align": "justify",
+                  //"text-justify": "inter-word",
+                  //"background-color": "Blue",
+                  "color": "Black"
+              });
+            }
+            else if (links[i].text.includes("TRAINING")) {
+              jQuery(".ns-today").eq(i).css({
+                  //"text-align": "justify",
+                  //"text-justify": "inter-word",
+                  "background-color": trainingColor
+//                    "color": "white"
+              });
+              jQuery(".ns-event-view").eq(i).css({
+                  //"text-align": "justify",
+                  //"text-justify": "inter-word",
+                  "background-color": trainingColor
+                  //"color": "white"
+              });
+              jQuery(".ns-event-link").eq(i).css({
+                  //"text-align": "justify",
+                  //"text-justify": "inter-word",
+                  //"background-color": "Blue",
+                  "color": "Black"
+              });
+            }
+            else if (links[i].text.includes("REMINDER")) {
+              jQuery(".ns-today").eq(i).css({
+                  //"text-align": "justify",
+                  //"text-justify": "inter-word",
+                  "background-color": reminderColor
+//                    "color": "white"
+              });
+              jQuery(".ns-event-view").eq(i).css({
+                  //"text-align": "justify",
+                  //"text-justify": "inter-word",
+                  "background-color": reminderColor
+                  //"color": "white"
+              });
+              jQuery(".ns-event-link").eq(i).css({
+                  //"text-align": "justify",
+                  //"text-justify": "inter-word",
+                  //"background-color": "Blue",
+                  "color": "Black"
+              });
+            }
+            else if (links[i].text.includes("HOLIDAY")) {
+              jQuery(".ns-today").eq(i).css({
+                  //"text-align": "justify",
+                  //"text-justify": "inter-word",
+                  "background-color": holidayColor
+//                    "color": "white"
+              });
+              jQuery(".ns-event-view").eq(i).css({
+                  //"text-align": "justify",
+                  //"text-justify": "inter-word",
+                  "background-color": holidayColor
+                  //"color": "white"
+              });
+              jQuery(".ns-event-link").eq(i).css({
+                  //"text-align": "justify",
+                  //"text-justify": "inter-word",
+                  //"background-color": "Blue",
+                  "color": "Black"
+              });
+            }
+            else if (links[i].text.includes("NOT")) {
                   jQuery(".ns-event-content").eq(i).removeAttr('style');
                   jQuery(".ns-event-link").eq(i).removeAttr('style');
                   //alert(links[i].text);

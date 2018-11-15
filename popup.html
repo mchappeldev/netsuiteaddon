@@ -1,53 +1,95 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <title>CADD Netsuite Extension:</title>
-  </head>
-  <body>
-    <img src="logo.png">
-	<h1>Netsuite Extension:</h1>
-	<p><b>AutoRefresh:</b> OnLoad + Interval</p>
-	<p><b>Interval:</b> 5 Minutes.</p>
-	<p><b>Version:</b> 0.5</p>
+    <link rel="stylesheet" type="text/css" href="options.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=RobotoDraft" rel="stylesheet">
+</head>
 
-  "Support" Calendar Highlight:<br>
-  <select id="color1">
-   <option value="red">Red</option>
-   <option value="green">Green</option>
-   <option value="blue">Blue</option>
-   <option value="yellow">Yellow</option>
-    <option value="">None</option>
-  </select>
-  <br>
-  <br>
-  "Internal" Calendar Highlight:<br>
-  <select id="color2">
-   <option value="red">Red</option>
-   <option value="green">Green</option>
-   <option value="blue">Blue</option>
-   <option value="yellow">Yellow</option>
-    <option value="">None</option>
-  </select>
-  <br>
-  <br>
-  "Leave" Calendar Highlight:<br>
-  <select id="color3">
-   <option value="red">Red</option>
-   <option value="green">Green</option>
-   <option value="blue">Blue</option>
-   <option value="yellow">Yellow</option>
-    <option value="">None</option>
-  </select>
+<body>
+    <img src="logo.png" class="center">
+    <h1>Netsuite Extension:<small><b>Version:</b> 0.6</small></h1>
+
+    <h2>Calendar Highlight Colors:</h2>
+
+      <form>
+        <div class="group">
+          <button class="paper-button-color" type="button" id="consultButton"><label for="consultCalendar">"CONSULT" Color</button>
+                  </div>
+        <input type="color" id="consultCalendar" hidden></input>
+
+        <div class="group">
+          <button class="paper-button-color" type="button" id="internalButton"><label for="internalCalendar">"INTERNAL" Color</button>
+                  </div>
+        <input type="color" id="internalCalendar" hidden></input>
+
+        <div class="group">
+          <button class="paper-button-color" type="button" id="leaveButton"><label for="leaveCalendar">"LEAVE" Color</button>
+                  </div>
+        <input type="color" id="leaveCalendar" hidden></input>
+
+        <div class="group">
+          <button class="paper-button-color" type="button" id="marketingButton"><label for="marketingCalendar">"MAREKTING" Color</button>
+                  </div>
+        <input type="color" id="marketingCalendar" hidden></input>
+
+        <div class="group">
+          <button class="paper-button-color" type="button" id="salesButton"><label for="salesCalendar">"SALES" Color</button>
+                  </div>
+        <input type="color" id="salesCalendar" hidden></input>
+
+        <div class="group">
+          <button class="paper-button-color" type="button" id="noteButton"><label for="noteCalendar">"NOTE" Color</button>
+                  </div>
+        <input type="color" id="noteCalendar" hidden></input>
+
+        <div class="group">
+          <button class="paper-button-color" type="button" id="supportButton"><label for="supportCalendar">"SUPPORT" Color</button>
+                  </div>
+        <input type="color" id="supportCalendar" hidden></input>
+
+        <div class="group">
+          <button class="paper-button-color" type="button" id="trainingButton"><label for="trainingCalendar">"TRAINING" Color</button>
+                  </div>
+        <input type="color" id="trainingCalendar" hidden></input>
+
+        <div class="group">
+          <button class="paper-button-color" type="button" id="reminderButton"><label for="reminderCalendar">"REMINDER" Color</button>
+                  </div>
+        <input type="color" id="reminderCalendar" hidden></input>
+
+        <div class="group">
+          <button class="paper-button-color" type="button" id="holidayButton"><label for="holidayCalendar">"HOLIDAY" Color</button>
+                  </div>
+        <input type="color" id="holidayCalendar" hidden></input>
+
+      </form>
 
 
 <br>
+
+    <button class="paper-button ripple" type="button" id="save"><span>Save</span></button>
+    <br>
+    <script src="options.js"></script>
+    <div id="status"></div>
 <br>
-  <div id="status"></div>
-  <button id="save">Save</button>
-  <br>
-
-  <script src="options.js"></script>
+    <p><b>AutoRefresh:</b> OnLoad + Interval</p>
+    <p><b>Interval:</b> 5 Minutes.</p>
 
 
-  </body>
+
+
+
+    <div id="status"></div>
+
+        <br>
+        <script src="options.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="popup.js"></script>
+
+</body>
+
 </html>

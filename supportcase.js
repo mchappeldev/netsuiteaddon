@@ -1,6 +1,7 @@
 // refresh case after 5 minutes
 var refreshVar = setInterval(refreshPage, 300000);
 var timeVar = 5;
+
 //refreshpage!
 function refreshPage() {
   //if (confirm("It's been 5 Minutes since you refreshed the page. Someone may have made changes to the case.\n\nPress OK to refresh the page or Cancel to continue working.")) {

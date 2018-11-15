@@ -7,7 +7,7 @@ window.addEventListener("load", function() {
 function checkMarks() {
     jQuery("#samecustomeronly_fs_inp").click();
     jQuery("#opencasesonly_fs_inp").click();
-    setTimeout(inputFieldChange, 200);
+    setTimeout(inputFieldChange, 225);
     return false;
 }
 
