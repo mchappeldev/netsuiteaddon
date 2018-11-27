@@ -1,14 +1,14 @@
 body
 {
   font-family:'Roboto';
-  width:300px;
+  width:240px;
   margin:30px auto 0;
   display:block;
-  background:#EEE;
+  background:#F1F1F1;
   padding:10px 50px 50px;
 }
 h2 		 {
-  margin-bottom:25px;
+  margin-bottom:10px;
 }
 h2 small {
   font-weight:normal;
@@ -16,7 +16,7 @@ h2 small {
   display:block;
 }
 h1 		 {
-  margin-bottom:25px;
+  margin-bottom:10px;
 }
 h1 small {
   font-weight:normal;
@@ -36,8 +36,9 @@ h1 small {
 .paper-button-color {
   padding:8px 16px;
   font-family: 'roboto';
+  text-align: center;
   font-weight:500;
-  width: 300px;
+  width: 200px;
   border:none;
   background-color:#2196F3;
   color:white;
@@ -45,6 +46,7 @@ h1 small {
   box-shadow:0 1px 2px rgba(0,0,0,0.25);
   cursor:pointer;
   transition: box-shadow 0.1s ease;
+  display:inline-block
 }
 
 .paper-button {
