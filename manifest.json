@@ -3,7 +3,7 @@
     "name": "CADD Microsystems Netsuite Extension",
     "description": "Extends Netsuite functionality using JQuery",
     "permissions": ["activeTab", "storage", "https://ajax.googleapis.com/"],
-    "version": "0.6",
+    "version": "0.6.1",
 
     "background": {
         "scripts": ["jquery-3.2.1.min.js"]
