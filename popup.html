@@ -10,7 +10,7 @@
 
 <body>
     <img src="logo.png" class="center">
-    <h1>Netsuite Extension:<small><b>Version:</b> 0.6</small></h1>
+    <h1>Netsuite Extension:<small><b>Version:</b> 0.7</small></h1>
 
     <h2>Calendar Highlight Colors:</h2>
 
@@ -31,7 +31,7 @@
         <input type="color" id="leaveCalendar" hidden></input>
 
         <div class="group">
-          <label class="paper-button-color" type="button" id="marketingButton" for="marketingCalendar">"MAREKTING" Color</label>
+          <label class="paper-button-color" type="button" id="marketingButton" for="marketingCalendar">"MARKETING" Color</label>
                   </div>
         <input type="color" id="marketingCalendar" hidden></input>
 
@@ -46,7 +46,7 @@
         <input type="color" id="noteCalendar" hidden></input>
 
         <div class="group">
-          <label class="paper-button-color" type="button" id="supportButton" for="supportCalendar">"SUPPORT" Color</label>
+          <label class="paper-button-color" type="button" id="supportButton" for="supportCalendar">"CADD CARE" Color</label>
                   </div>
         <input type="color" id="supportCalendar" hidden></input>
 
@@ -64,7 +64,16 @@
           <label class="paper-button-color" type="button" id="holidayButton" for="holidayCalendar">"HOLIDAY" Color</label>
                   </div>
         <input type="color" id="holidayCalendar" hidden></input>
-
+    <h2>Calendar Highlight Fill:</h2>
+        <div class="select">
+          <select class="select-text" name="Lighten" id="lightenField">
+            <option value="25">Dark</option>
+            <option value="50">Normal</option>
+            <option value="100">Light</option>
+            <option value="150">Very Light</option>
+            <option value="255">Off</option>
+          </select>
+        </div>
       </form>
 
 
@@ -87,7 +96,6 @@
         <br>
         <script src="options.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="popup.js"></script>
 
 </body>

@@ -82,6 +82,25 @@ Material Design Ripple styling
 https://codepen.io/Craigtut/pen/dIfzv
 */
 
+.select {
+  font-family:
+    'Roboto','Helvetica','Arial',sans-serif;
+	position: relative;
+	width: 233px;
+}
+
+.select-text {
+	position: relative;
+	font-family: inherit;
+	background-color: white;
+	width: 233px;
+	padding: 10px 10px 10px 0;
+	font-size: 14px;
+	border-radius: 0;
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0, 0.12);
+}
+
 .material{
   position:relative;
   color:white;
