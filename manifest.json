@@ -3,7 +3,7 @@
     "name": "CADD Microsystems Netsuite Extension",
     "description": "Extends Netsuite functionality using JQuery",
     "permissions": ["activeTab", "storage", "https://ajax.googleapis.com/"],
-    "version": "0.7.0",
+    "version": "0.7.1",
 
     "background": {
         "scripts": ["jquery-3.2.1.min.js"]
@@ -34,22 +34,23 @@
 
     "content_scripts": [{
             "js": ["jquery-3.2.1.min.js", "dashboard-refresh.js"],
-            "matches": ["https://system.na3.netsuite.com/app/center/card*"],
+            "matches": ["https://*.netsuite.com/app/center/card*"],
             "run_at": "document_start"
         },
         {
           "js": ["dashboard-highlight.js"],
-          "matches": ["https://system.na3.netsuite.com/app/center/card*"]
+          "matches": ["https://*.netsuite.com/app/center/card*"],
+		  "run_at": "document_start"
 
         },
         {
                 "js": ["jquery-3.2.1.min.js", "supportcase.js"],
-                "matches": ["https://system.na3.netsuite.com/app/crm/support/supportcase*"],
+                "matches": ["https://*.netsuite.com/app/crm/support/supportcase*"],
                 "run_at": "document_start"
         },
         {
             "js": ["jquery-3.2.1.min.js", "merge.js"],
-            "matches": ["https://system.na3.netsuite.com/app/crm/support/supportcasemerge*"],
+            "matches": ["https://*.netsuite.com/app/crm/support/supportcasemerge*"],
             "run_at": "document_start"
         }
     ]
