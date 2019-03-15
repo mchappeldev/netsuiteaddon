@@ -4,14 +4,14 @@
       "updates": [
         { "version": "0.3",
           "update_link": "https://github.com/subaru25rs/netsuiteaddon/raw/master/Updates/netsuite_extension-0.3-an%2Bfx-windows.xpi" },
-          { "version": "0.5",
-            "update_link": "https://github.com/subaru25rs/netsuiteaddon/raw/master/Updates/netsuite_extension-0.5-an%2Bfx.xpi" },
-            { "version": "0.6",
-              "update_link": "https://github.com/subaru25rs/netsuiteaddon/raw/master/Updates/netsuite_extension-0.6-fx.xpi" }
-              { "version": "0.7",
-                "update_link": "https://github.com/subaru25rs/netsuiteaddon/raw/master/Updates/netsuite_extension-0.7-fx.xpi" }
-                { "version": "0.7.1",
-                  "update_link": "https://github.com/subaru25rs/netsuiteaddon/raw/master/Updates/netsuite_extension-0.7.1-fx.xpi" }
+        { "version": "0.5",
+          "update_link": "https://github.com/subaru25rs/netsuiteaddon/raw/master/Updates/netsuite_extension-0.5-an%2Bfx.xpi" },
+        { "version": "0.6",
+          "update_link": "https://github.com/subaru25rs/netsuiteaddon/raw/master/Updates/netsuite_extension-0.6-fx.xpi" },
+        { "version": "0.7",
+          "update_link": "https://github.com/subaru25rs/netsuiteaddon/raw/master/Updates/netsuite_extension-0.7-fx.xpi" },
+        { "version": "0.7.1",
+          "update_link": "https://github.com/subaru25rs/netsuiteaddon/raw/master/Updates/netsuite_extension-0.7.1-fx.xpi" }
 
       ]
     }
