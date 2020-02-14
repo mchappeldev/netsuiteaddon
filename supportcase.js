@@ -1,3 +1,12 @@
+//Change Window Title to Case# on window load
+window.addEventListener(
+  "load",
+  function() {
+    window.document.title = jQuery(".uir-record-id").text() + " - Netsuite - Case";
+  },
+  false
+);
+
 // refresh case after 5 minutes
 var refreshVar = setInterval(refreshPage, 300000);
 var timeVar = 5;
