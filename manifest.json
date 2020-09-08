@@ -49,6 +49,11 @@
                 "run_at": "document_start"
         },
         {
+            "js": ["jquery-3.2.1.min.js", "email-subject.js"],
+            "matches": ["https://*.netsuite.com/app/crm/common/crmmessage*"],
+            "run_at": "document_start"
+        },
+        {
             "js": ["jquery-3.2.1.min.js", "merge.js"],
             "matches": ["https://*.netsuite.com/app/crm/support/supportcasemerge*"],
             "run_at": "document_start"

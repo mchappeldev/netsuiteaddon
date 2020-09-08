@@ -211,7 +211,7 @@ function highlight() {
           .css({
             color: "Black"
           });
-      } else if (links[i].text.includes("CADD CARE")) {
+      } else if (links[i].text.includes("CADD Care")) {
         jQuery(".ns-today")
           .eq(i)
           .css({
