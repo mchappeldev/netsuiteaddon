@@ -5,6 +5,9 @@
 			Added more info to popup.html,
 			Created update strategy for Firefox with project hosted on GitHub
 			Changed Icons for Firefox
+0.4-0.7 - Added Highlighting to calendars and setting menus for controlling the colors. Other tweaks and enhancements.
+1.0 - Added Case numbers in the TAB titles, and added the CADD Care subject to every email. Long term release.
 
 Wishlist: 
-Popup Alert for case refresh.
+Macros for Email writing
+Remove Case Refresh behavior
