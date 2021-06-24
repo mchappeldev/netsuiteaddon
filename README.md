@@ -29,5 +29,5 @@ Let me know what you guys think! There have already been a few request for addit
 ## Usage
 Most of the items are passively enabled by default. You'll need to click the Add-In on your toolbar to select and save your color preferences for your calendar as they default to off.
 
-##Questions?
+## Questions?
 Email [Michael Chappel](mailto:michael.chappel@caddmicrosystems.com) for more info!
